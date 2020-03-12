@@ -7,6 +7,10 @@ plot_date = []
 
 
 def prepare_date(day):
+    global date_in_datatime
+    date_in_datatime= []
+    global  plot_date
+    plot_date= []
     for date in day:
         try:
             date_in_datatime.append(datetime.strptime(date, "%Y-%m-%d"))

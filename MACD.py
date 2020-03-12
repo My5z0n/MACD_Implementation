@@ -1,9 +1,12 @@
+from statistics import mean
+
 macd = []
 signal = []
-
+rwiliams = []
 
 #Calculates ema
 def make_ema(n, data, day):
+
     tmp_vector = data[day - n: day + 1] # vector of intresting prices in this calculation
     alpha = 2 / (n + 1)  # declaring smoothing factor
     sum = 0.0
@@ -18,7 +21,8 @@ def make_ema(n, data, day):
 
 #Calculates macd rate
 def make_macd(exchange_rate):
-
+    global macd
+    macd = []
     for i in range(len(exchange_rate)):
         if i < 26:
             macd.append(None)
@@ -32,7 +36,23 @@ def make_macd(exchange_rate):
 
 #Calculate Signal
 def make_signal():
+    global signal
+    signal = []
     for i in range(35):
         signal.append(None)
     for i in range(35, len(macd)):
         signal.append(make_ema(9, macd, i))
+
+def make_wiliams(exchange_rate):
+    global rwiliams
+    rwiliams = []
+    for i in range(14):
+        rwiliams.append(None)
+    for i in range(14, len(exchange_rate)):
+        tmp=exchange_rate[i - 14: i]
+        maxtmp = max(tmp)
+        mintmp = min(tmp)
+        xxx = exchange_rate[i]
+        k= ((xxx-maxtmp)/(maxtmp-mintmp))*100
+        rwiliams.append(k)
+    pass
