@@ -46,13 +46,14 @@ def make_signal():
 def make_wiliams(exchange_rate):
     global rwiliams
     rwiliams = []
-    for i in range(14):
+    gowno=28
+    for i in range(gowno):
         rwiliams.append(None)
-    for i in range(14, len(exchange_rate)):
-        tmp=exchange_rate[i - 14: i]
+    for i in range(gowno, len(exchange_rate)):
+        tmp=exchange_rate[i - gowno: i]
         maxtmp = max(tmp)
         mintmp = min(tmp)
         xxx = exchange_rate[i]
-        k= ((xxx-maxtmp)/(maxtmp-mintmp))*100
+        k= ((maxtmp-xxx)/(maxtmp-mintmp))*(-100)
         rwiliams.append(k)
     pass

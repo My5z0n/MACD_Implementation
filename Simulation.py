@@ -3,7 +3,7 @@ from datetime import datetime
 import print_chart
 
 
-def create_buy_sell_signalls(data, prices, MACD, SIGNAL):
+def create_buy_sell_signalls(data, prices, MACD, SIGNAL,wiliam):
     dif = 0
     buy_sell = []
     for i in range(len(MACD)):
@@ -26,15 +26,16 @@ def create_buy_sell_signalls(data, prices, MACD, SIGNAL):
                 # MACD intersects SIGNAL from below
                 dif = 1
                 # signals should be bellow 0 to be more reliable
-                if MACD[i] < -varunek:
-                    buy_sell.append((data[i], 'BUY', prices[i]))
+                #if MACD[i] < -varunek:
+                #
+                buy_sell.append((data[i], 'BUY', prices[i]))
         elif MACD[i] - SIGNAL[i] < 0:
             if dif == 1:
                 # MACD intersects SIGNAL from above to be more reliable
                 dif = -1
                 # signals should be above 0 to be more reliable
-                if MACD[i] > varunek :
-                    buy_sell.append((data[i], 'SEL', prices[i]))
+                #if MACD[i] > varunek :
+                buy_sell.append((data[i], 'SEL', prices[i]))
             elif dif == -1:
                 pass
 
@@ -43,8 +44,8 @@ def create_buy_sell_signalls(data, prices, MACD, SIGNAL):
     return buy_sell
 
 
-def perform_simulation(data, prices, MACD, SIGNAL, xname="",start_day=1, end_day=1000, money=1000.0,):
-    buy_sell = create_buy_sell_signalls(data, prices, MACD, SIGNAL)
+def perform_simulation(data, prices, MACD, SIGNAL, wiliam,xname="",start_day=1, end_day=1000, money=1000.0,):
+    buy_sell = create_buy_sell_signalls(data, prices, MACD, SIGNAL,wiliam)
     points = 0.0
   #  print('Start Point:')
   #  print(f'Money: {money}')
@@ -53,9 +54,9 @@ def perform_simulation(data, prices, MACD, SIGNAL, xname="",start_day=1, end_day
     if len(buy_sell)>0:
 
         for a in range(start_day-1, end_day-1):
-            if data[a] == buy_sell[k][0]:
+            if data[a] == buy_sell[k][0] :
 
-                if buy_sell[k][1] == 'BUY' and money != 0.0:
+                if buy_sell[k][1] == 'BUY' and money != 0.0 and wiliam[a] is not None and wiliam[a]<=-79.0:
                     points += money / buy_sell[k][2]
                     money = 0.0
                     last_event=datetime.strptime(data[a], "%Y-%m-%d")
@@ -65,7 +66,7 @@ def perform_simulation(data, prices, MACD, SIGNAL, xname="",start_day=1, end_day
                    # print(f'SIGNAL: {buy_sell[k][1]}')
                    # print(f'Money: {money}')
                    # print(f'Points: {points}')
-                if buy_sell[k][1] == 'SEL' and points != 0.0:
+                if buy_sell[k][1] == 'SEL' and points != 0.0 and wiliam[a] is not None  and wiliam[a]>=-19.0:
                     money += points * buy_sell[k][2]
                     points = points-1*points
                    # print('-------------')

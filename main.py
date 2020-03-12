@@ -35,7 +35,7 @@ def main():
         MACD.make_signal()
         MACD.make_wiliams(dl.imported_price)
         #print("Simulation")
-        var = Simulation.perform_simulation(dl.imported_data, dl.imported_price, MACD.macd, MACD.signal,x)
+        var = Simulation.perform_simulation(dl.imported_data, dl.imported_price, MACD.macd, MACD.signal,MACD.rwiliams,x)
         final=final+var
         pusta.append(var)
       #  print("Drawing plot")
