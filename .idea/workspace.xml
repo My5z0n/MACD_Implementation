@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9d3adb6-a2c2-4b79-a0be-24d2257cb2c7" name="Default Changelist" comment="Add Report">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/untitled5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/untitled5.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/print_chart.py" beforeDir="false" afterPath="$PROJECT_DIR$/print_chart.py" afterDir="false" />
-    </list>
-    <list id="5646beea-a037-433d-b4e0-c77bfd114ea4" name="Add Report" comment="Add Report">
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MACD.py" beforeDir="false" afterPath="$PROJECT_DIR$/MACD.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
+    <list id="5646beea-a037-433d-b4e0-c77bfd114ea4" name="Add Report" comment="Add Report" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,9 +47,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/print_chart.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled5" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/print_chart.py" />
@@ -69,7 +70,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="data/WIG_20.csv WIG20" />
+      <option name="PARAMETERS" value="data/WIG_20.csv WIG20 -mytype 2" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -81,6 +82,9 @@
       <module name="untitled5" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -122,6 +126,9 @@
       <module name="untitled5" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -188,6 +195,7 @@
       <option name="presentableId" value="Default" />
       <updated>1582970096017</updated>
       <workItem from="1583674745253" duration="978000" />
+      <workItem from="1584021523740" duration="4030000" />
     </task>
     <task id="LOCAL-00001" summary="Add Report">
       <created>1583161858760</created>
@@ -271,6 +279,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="Add Report" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584025204931">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584025204931" />
+    <state x="869" y="273" key="#xdebugger.XInspectDialog" timestamp="1584024317315">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="869" y="273" key="#xdebugger.XInspectDialog/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584024317315" />
     <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1583675877369">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -279,42 +295,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="184" y="86" width="1536" height="860" key="DiffContextDialog/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1583675766867" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1583675743018">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1584022327693">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1583675743018" />
-    <state width="1877" height="347" key="GridCell.Tab.0.bottom" timestamp="1583675792226">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584022327693" />
+    <state width="1877" height="287" key="GridCell.Tab.0.bottom" timestamp="1584025206162">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1583675792226" />
-    <state width="1877" height="347" key="GridCell.Tab.0.center" timestamp="1583675792226">
+    <state width="1877" height="287" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584025206162" />
+    <state width="1877" height="287" key="GridCell.Tab.0.center" timestamp="1584025206162">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.0.center/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1583675792226" />
-    <state width="1877" height="347" key="GridCell.Tab.0.left" timestamp="1583675792226">
+    <state width="1877" height="287" key="GridCell.Tab.0.center/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584025206162" />
+    <state width="1877" height="287" key="GridCell.Tab.0.left" timestamp="1584025206162">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.0.left/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1583675792226" />
-    <state width="1877" height="347" key="GridCell.Tab.0.right" timestamp="1583675792226">
+    <state width="1877" height="287" key="GridCell.Tab.0.left/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584025206162" />
+    <state width="1877" height="287" key="GridCell.Tab.0.right" timestamp="1584025206162">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.0.right/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1583675792226" />
-    <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1583675792227">
+    <state width="1877" height="287" key="GridCell.Tab.0.right/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584025206162" />
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1584024365414">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1583675792227" />
-    <state width="1877" height="347" key="GridCell.Tab.1.center" timestamp="1583675792227">
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584024365414" />
+    <state width="1877" height="347" key="GridCell.Tab.1.center" timestamp="1584024365414">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.center/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1583675792227" />
-    <state width="1877" height="347" key="GridCell.Tab.1.left" timestamp="1583675792226">
+    <state width="1877" height="347" key="GridCell.Tab.1.center/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584024365414" />
+    <state width="1877" height="347" key="GridCell.Tab.1.left" timestamp="1584024365414">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.left/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1583675792226" />
-    <state width="1877" height="347" key="GridCell.Tab.1.right" timestamp="1583675792227">
+    <state width="1877" height="347" key="GridCell.Tab.1.left/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584024365414" />
+    <state width="1877" height="347" key="GridCell.Tab.1.right" timestamp="1584024365414">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.right/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1583675792227" />
+    <state width="1877" height="347" key="GridCell.Tab.1.right/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584024365414" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1583674818252">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -336,14 +352,25 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/print_chart.py</url>
-          <line>24</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/Simulation.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Simulation.py</url>
+          <line>50</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="mytype" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/untitled5$1.coverage" NAME="1 Coverage Results" MODIFIED="1583675377550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MACD_Implementation$1.coverage" NAME="1 Coverage Results" MODIFIED="1584025206151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

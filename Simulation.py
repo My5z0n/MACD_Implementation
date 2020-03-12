@@ -23,15 +23,15 @@ def create_buy_sell_signalls(data, prices, MACD, SIGNAL):
                 # MACD intersects SIGNAL from below
                 dif = 1
                 # signals should be bellow 0 to be more reliable
-                if MACD[i] < 0 and SIGNAL[i] < 0:
-                    buy_sell.append((data[i], 'BUY', prices[i]))
+                #if MACD[i] < 0 and SIGNAL[i] < 0:
+                buy_sell.append((data[i], 'BUY', prices[i]))
         elif MACD[i] - SIGNAL[i] < 0:
             if dif == 1:
                 # MACD intersects SIGNAL from above to be more reliable
                 dif = -1
                 # signals should be above 0 to be more reliable
-                if MACD[i] > 0 and SIGNAL[i] > 0:
-                    buy_sell.append((data[i], 'SEL', prices[i]))
+                #if MACD[i] > 0 and SIGNAL[i] > 0:
+                buy_sell.append((data[i], 'SEL', prices[i]))
             elif dif == -1:
                 pass
 
@@ -40,7 +40,7 @@ def create_buy_sell_signalls(data, prices, MACD, SIGNAL):
     return buy_sell
 
 
-def perform_simulation(data, prices, MACD, SIGNAL, start_day=1, end_day=1000, money=1000.0):
+def perform_simulation(data, prices, MACD, SIGNAL,wiliam, start_day=1, end_day=1000,mytype=1, money=1000.0):
     buy_sell = create_buy_sell_signalls(data, prices, MACD, SIGNAL)
     points = 0.0
     print('Start Point:')
@@ -49,25 +49,52 @@ def perform_simulation(data, prices, MACD, SIGNAL, start_day=1, end_day=1000, mo
     k = 0
     for a in range(start_day-1, end_day-1):
         if data[a] == buy_sell[k][0]:
-
-            if buy_sell[k][1] == 'BUY' and money != 0.0:
-                points += money / buy_sell[k][2]
-                money = 0.0
-                print('-------------')
-                print(f'Date: {data[a]}')
-                print(f'Price: {prices[a]}')
-                print(f'SIGNAL: {buy_sell[k][1]}')
-                print(f'Money: {money}')
-                print(f'Points: {points}')
-            if buy_sell[k][1] == 'SEL' and points != 0.0:
-                money += points * buy_sell[k][2]
-                points = 0.0
-                print('-------------')
-                print(f'Date: {data[a]}')
-                print(f'Price: {prices[a]}')
-                print(f'SIGNAL: {buy_sell[k][1]}')
-                print(f'Money: {money}')
-                print(f'Points: {points}')
+            if wiliam is None or mytype ==1:
+                if buy_sell[k][1] == 'BUY' and money != 0.0 :
+                    print('-------------')
+                    print(f'Date: {data[a]}')
+                    print(f'Price: {prices[a]}')
+                    print(f'Money: {money}')
+                    print(f'Points: {points}')
+                    print(f'SIGNAL: {buy_sell[k][1]}')
+                    points += money / buy_sell[k][2]
+                    money = 0.0
+                    print(f'Money: {money}')
+                    print(f'Points: {points}')
+                if buy_sell[k][1] == 'SEL' and points != 0.0:
+                    print('-------------')
+                    print(f'Date: {data[a]}')
+                    print(f'Price: {prices[a]}')
+                    print(f'Money: {money}')
+                    print(f'Points: {points}')
+                    print(f'SIGNAL: {buy_sell[k][1]}')
+                    money += points * buy_sell[k][2]
+                    points = 0.0
+                    print(f'Money: {money}')
+                    print(f'Points: {points}')
+            else:
+                if buy_sell[k][1] == 'BUY' and money != 0.0 and wiliam[a]<=-79.0:
+                    print('-------------')
+                    print(f'Date: {data[a]}')
+                    print(f'Price: {prices[a]}')
+                    print(f'Money: {money}')
+                    print(f'Points: {points}')
+                    print(f'SIGNAL: {buy_sell[k][1]}')
+                    points += money / buy_sell[k][2]
+                    money = 0.0
+                    print(f'Money: {money}')
+                    print(f'Points: {points}')
+                if buy_sell[k][1] == 'SEL' and points != 0.0 and wiliam[a]>=-19.0:
+                    print('-------------')
+                    print(f'Date: {data[a]}')
+                    print(f'Price: {prices[a]}')
+                    print(f'Money: {money}')
+                    print(f'Points: {points}')
+                    print(f'SIGNAL: {buy_sell[k][1]}')
+                    money += points * buy_sell[k][2]
+                    points = 0.0
+                    print(f'Money: {money}')
+                    print(f'Points: {points}')
             if len(buy_sell) - 1 == k:
                 break
             else:
