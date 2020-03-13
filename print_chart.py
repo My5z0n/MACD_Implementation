@@ -17,42 +17,31 @@ def prepare_date(day):
         plot_date.append(dat.date2num(date))
 
 
-def draw_plot(prices, day, MACD, signal, name,type=1):
+def draw_plot(prices, day, MACD, signal, name, type=1):
     prepare_date(day)
-    fig, ax1 = plt.subplots(figsize=(14,5))
+    plt.figure(figsize=(12, 9))
+
+    plt.gcf().autofmt_xdate()
+
+    ax1 = plt.subplot(211)
+    plt.plot(plot_date, prices, color="red")
     plt.grid(True)
+    plt.ylabel("Exchange " + name)
 
-    if type == 1:
-        color = 'tab:red'
+    plt.title(name + " Exchange rate ")
 
-        ax1.set_xlabel('Date')
-        ax1.set_ylabel(name, color=color)
-        ax1.plot(plot_date, prices, color=color, label=name)
-        ax1.tick_params(axis='y', labelcolor=color)
+    plt.subplot(212, sharex=ax1)
+    plt.plot(plot_date, MACD, color="darkorange", label="macd")
+    plt.plot(plot_date, signal, color="green", label="signal")
+    plt.legend()
+    plt.grid(True)
+    plt.title("MACD Signals")
+    plt.ylabel("Value")
 
-        ax2 = ax1.twinx()  # instantiate a second axes that shares the same x-axis
+    plt.xlabel("Date YYYY-MM")
 
-        color = 'tab:orange'
-        color2 = 'tab:green'
-        ax2.set_ylabel('MACD VALUES', color=color)  # we already handled the x-label with ax1
-        ax2.plot(plot_date, MACD, color=color, label='MACD ')
-        ax2.plot(plot_date, signal, color=color2, label='SIGNAL')
-        ax2.tick_params(axis='y', labelcolor=color)
-
-
-    elif type == 2:
-        color = 'tab:red'
-        ax1.set_xlabel('Date')
-        ax1.plot(plot_date, signal, color=color, label='SIGNAL')
-
-        color = 'tab:green'
-        ax1.plot(plot_date, MACD, color=color, label='MACD')
-
-    # Prepare to show
     plt.gcf().autofmt_xdate()
     myFmt = dat.DateFormatter('%Y-%m')
     plt.gca().xaxis.set_major_formatter(myFmt)
-    fig.tight_layout()
-    fig.legend(loc='upper left', bbox_to_anchor=(0.06, 0.97))
 
     plt.show()
