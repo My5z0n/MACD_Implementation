@@ -2,15 +2,14 @@ import MACD
 import data_load as dl
 import print_chart as pch
 import  Simulation
+import argparse
 def main():
-    import argparse
+
     parser = argparse.ArgumentParser()
     parser.add_argument("fname", help="file path containing stock data",
                         type=str)
     parser.add_argument("name", help="name of stock market shares",
                         type=str)
-    parser.add_argument("-plot", help="type of displayed plot",type=int,
-                        default=1)
     parser.add_argument("-begin", help="day when buy/sell simulation starts", type=int,
                         default=1)
     parser.add_argument("-end", help="day when buy/sell simulation stops", type=int,

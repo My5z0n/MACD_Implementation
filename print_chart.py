@@ -17,7 +17,7 @@ def prepare_date(day):
         plot_date.append(dat.date2num(date))
 
 
-def draw_plot(prices, day, MACD, signal, name, type=1):
+def draw_plot(prices, day, MACD, signal, name):
     prepare_date(day)
     plt.figure(figsize=(12, 9))
 

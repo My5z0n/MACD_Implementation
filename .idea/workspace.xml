@@ -4,9 +4,7 @@
     <list default="true" id="c9d3adb6-a2c2-4b79-a0be-24d2257cb2c7" name="Default Changelist" comment="Add improved algoithm and clean some">
       <change afterPath="$PROJECT_DIR$/data/wig20_d.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/Metody Numeryczne.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Report/Metody Numeryczne.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/Metody Numeryczne.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Report/Metody Numeryczne.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/print_chart.py" beforeDir="false" afterPath="$PROJECT_DIR$/print_chart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <list id="5646beea-a037-433d-b4e0-c77bfd114ea4" name="Add Report" comment="Add Report" />
     <option name="SHOW_DIALOG" value="false" />
@@ -198,7 +196,11 @@
       <updated>1582970096017</updated>
       <workItem from="1583674745253" duration="978000" />
       <workItem from="1584021523740" duration="4282000" />
-      <workItem from="1584123022881" duration="7487000" />
+      <workItem from="1584123022881" duration="9396000" />
+      <workItem from="1584180827333" duration="43000" />
+      <workItem from="1584274811999" duration="55000" />
+      <workItem from="1584795171588" duration="675000" />
+      <workItem from="1584812183372" duration="1235000" />
     </task>
     <task id="LOCAL-00001" summary="Add Report">
       <created>1583161858760</created>
@@ -221,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584031397344</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Changed plot style.">
+      <created>1584132295119</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1584132295119</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,29 +297,30 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Add Report" />
     <MESSAGE value="Add improved algoithm and clean some" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add improved algoithm and clean some" />
+    <MESSAGE value="Changed plot style." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed plot style." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584131581062">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584965215723">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584131581062" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584965215723" />
     <state x="869" y="273" key="#xdebugger.XInspectDialog" timestamp="1584024317315">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="869" y="273" key="#xdebugger.XInspectDialog/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584024317315" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1584131556317">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1584132294250">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584131556317" />
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584132294250" />
     <state x="184" y="86" width="1536" height="860" key="DiffContextDialog" timestamp="1583675766867">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="184" y="86" width="1536" height="860" key="DiffContextDialog/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1583675766867" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1584131372071">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1584274859203">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584131372071" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584274859203" />
     <state width="1877" height="286" key="GridCell.Tab.0.bottom" timestamp="1584131581870">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -347,14 +357,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1583674818252" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1584031403680">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1584132297820">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584031403680" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1583674745617">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584132297820" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1584274828491">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1583674745617" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584274828491" />
     <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583675962892">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
