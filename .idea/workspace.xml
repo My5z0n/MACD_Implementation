@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9d3adb6-a2c2-4b79-a0be-24d2257cb2c7" name="Default Changelist" comment="Add improved algoithm and clean some">
-      <change afterPath="$PROJECT_DIR$/data/wig20_d.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="c9d3adb6-a2c2-4b79-a0be-24d2257cb2c7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation.py" afterDir="false" />
     </list>
     <list id="5646beea-a037-433d-b4e0-c77bfd114ea4" name="Add Report" comment="Add Report" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="untitled5" />
@@ -201,6 +213,7 @@
       <workItem from="1584274811999" duration="55000" />
       <workItem from="1584795171588" duration="675000" />
       <workItem from="1584812183372" duration="1235000" />
+      <workItem from="1584965188901" duration="466000" />
     </task>
     <task id="LOCAL-00001" summary="Add Report">
       <created>1583161858760</created>
@@ -230,7 +243,21 @@
       <option name="project" value="LOCAL" />
       <updated>1584132295119</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Deleted choose of print way">
+      <created>1584965263948</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1584965263948</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Deleted choose of print way">
+      <created>1584965339358</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1584965339358</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,21 +325,22 @@
     <MESSAGE value="Add Report" />
     <MESSAGE value="Add improved algoithm and clean some" />
     <MESSAGE value="Changed plot style." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed plot style." />
+    <MESSAGE value="Deleted choose of print way" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted choose of print way" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584965215723">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584965362244">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584965215723" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584965362244" />
     <state x="869" y="273" key="#xdebugger.XInspectDialog" timestamp="1584024317315">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="869" y="273" key="#xdebugger.XInspectDialog/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584024317315" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1584965263274">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1584965338801">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584965263274" />
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584965338801" />
     <state x="184" y="86" width="1536" height="860" key="DiffContextDialog" timestamp="1583675766867">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -321,22 +349,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584274859203" />
-    <state width="1877" height="286" key="GridCell.Tab.0.bottom" timestamp="1584965305871">
+    <state width="1877" height="286" key="GridCell.Tab.0.bottom" timestamp="1584965644069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="286" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584965305871" />
-    <state width="1877" height="286" key="GridCell.Tab.0.center" timestamp="1584965305871">
+    <state width="1877" height="286" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584965644069" />
+    <state width="1877" height="286" key="GridCell.Tab.0.center" timestamp="1584965644069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="286" key="GridCell.Tab.0.center/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584965305871" />
-    <state width="1877" height="286" key="GridCell.Tab.0.left" timestamp="1584965305870">
+    <state width="1877" height="286" key="GridCell.Tab.0.center/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584965644069" />
+    <state width="1877" height="286" key="GridCell.Tab.0.left" timestamp="1584965644069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="286" key="GridCell.Tab.0.left/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584965305870" />
-    <state width="1877" height="286" key="GridCell.Tab.0.right" timestamp="1584965305871">
+    <state width="1877" height="286" key="GridCell.Tab.0.left/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584965644069" />
+    <state width="1877" height="286" key="GridCell.Tab.0.right" timestamp="1584965644069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="286" key="GridCell.Tab.0.right/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584965305871" />
+    <state width="1877" height="286" key="GridCell.Tab.0.right/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584965644069" />
     <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1584126487388">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -357,10 +385,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1583674818252" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1584965267402">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1584965340627">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584965267402" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.181.1440.860@0.0.1920.1040" timestamp="1584965340627" />
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1584274828491">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -407,6 +435,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/untitled5$1.coverage" NAME="1 Coverage Results" MODIFIED="1583675377550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/MACD_Implementation$1.coverage" NAME="1 Coverage Results" MODIFIED="1584965305857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MACD_Implementation$1.coverage" NAME="1 Coverage Results" MODIFIED="1584965644061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
