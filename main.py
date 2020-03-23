@@ -32,7 +32,7 @@ def main():
 
    # Simulation.perform_simulation(dl.imported_data, dl.imported_price, MACD.macd, MACD.signal,MACD.rwiliams,args.begin,args.end)
     print("Drawing plot")
-    pch.draw_plot(dl.imported_price,dl.imported_data,MACD.macd,MACD.signal,args.name,args.plot)
+    pch.draw_plot(dl.imported_price,dl.imported_data,MACD.macd,MACD.signal,args.name)
     print("Closing Script...")
 
 if __name__ == "__main__":
